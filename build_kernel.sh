@@ -160,6 +160,9 @@ echo "${bldcya}***** Make archives *****${txtrst}"
 
 cp ./$TARGET/boot.img ${KERNELDIR}/output/$TARGET
 cp -R ./META-INF ${KERNELDIR}/output/$TARGET/
+cp -R ./magisk ${KERNELDIR}/output/$TARGET/
+cp -R ./system ${KERNELDIR}/output/$TARGET/
+cp -R ./mtweaks ${KERNELDIR}/output/$TARGET/
 
 cd ${KERNELDIR}/output/$TARGET
 GETVER=`grep 'S6_MM_*v' ${KERNELDIR}/.config | sed 's/.*".//g' | sed 's/-S.*//g'`
