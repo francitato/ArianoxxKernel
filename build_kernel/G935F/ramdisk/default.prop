@@ -2,18 +2,18 @@
 # ADDITIONAL_DEFAULT_PROPERTIES
 #
 persist.security.ams.enforcing=0
-ro.oem_unlock_supported=1
+ro.oem_unlock_supported=0
 ro.secure=0
 security.perf_harden=1
 ro.adb.secure=0
-ro.allow.mock.location=0
+ro.allow.mock.location=1
 ro.debuggable=1
 persist.sys.usb.config=mtp,adb
 persist.service.adb.enable=1
 persist.service.debuggable=1
 persist.adb.notify=0
 ro.zygote=zygote64_32
-ro.telephony.default_network=9
+ro.telephony.default_network=10
 ro.supportmodel.mptcp=1
 ro.radio.noril=no
 ro.telephony.default_cdma_sub=0
@@ -27,7 +27,7 @@ dalvik.vm.usejitprofiles=true
 dalvik.vm.dexopt.secondary=true
 dalvik.vm.appimageformat=lz4
 pm.dexopt.first-boot=quicken
-pm.dexopt.boot=verify
+pm.dexopt.boot=speed
 pm.dexopt.install=quicken
 pm.dexopt.bg-dexopt=speed-profile
 pm.dexopt.ab-ota=speed-profile
@@ -46,6 +46,6 @@ wlan.wfd.hdcp=disable
 #
 # BOOTIMAGE_BUILD_PROPERTIES
 #
-ro.bootimage.build.date=Fri May 11 18:40:54 KST 2018
-ro.bootimage.build.date.utc=1526031654
+ro.bootimage.build.date=Fri May 26 16:40:30 CEST 2018
+ro.bootimage.build.date.utc=2616403018
 ro.bootimage.build.fingerprint=samsung/hero2ltexx/hero2lte:8.0.0/R16NW/G935FXXU2ERE8:user/test-keys
